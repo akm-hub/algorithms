@@ -71,7 +71,7 @@ string SimpleXOR::xor_key_with(const string& input) {
   * \return the ciphertext string
   */
 string SimpleXOR::encrypt(const string& given_cleartext) {
-	return XOR_key_with(given_cleartext);
+	return xor_key_with(given_cleartext);
 }
 
 /** \brief decrypt the message
@@ -79,7 +79,7 @@ string SimpleXOR::encrypt(const string& given_cleartext) {
   * \return cleartext string
   */
 string SimpleXOR::decrypt(const string& given_ciphertext) {
-	return XOR_key_with(given_ciphertext);
+	return xor_key_with(given_ciphertext);
 }
 
 
